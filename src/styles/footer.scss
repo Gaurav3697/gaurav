@@ -1,0 +1,64 @@
+footer{
+    width: 100%;
+    background-color: $secondary_dark;
+    color: white;
+    text-decoration: none;
+    grid-template-columns: 2fr 1fr;
+    padding: 5%;
+    display: grid;
+    height: auto;
+    >div{
+        align-items: center;
+        padding: 2%;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px;
+        >h2{
+            font: 700 2rem $text3;
+        }
+        >img{
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin: 1%;
+        }
+        >span{
+            font: 400 1.1rem $text1;
+            margin: 1%;
+        }
+        >p{
+            font: 400 1.1rem $text1;
+            margin: 1%;
+
+        }
+    }
+    >aside{
+        text-align: center;
+        padding: 2%;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px;
+        >h2{
+            font: 700 2rem $text3;
+        }
+        >a{
+            margin: 2%;
+            padding:3%;
+            color: white;
+            &:hover{
+                color:grey;
+            }
+            >svg{
+                height: 2.5rem;
+                width: 2.5rem;
+            }
+            >span{
+                font: 500 1.4rem $text3;
+            }
+        }
+    }
+}

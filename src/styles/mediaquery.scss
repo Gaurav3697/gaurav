@@ -1,0 +1,159 @@
+@media screen and (max-width: 1000px) {
+  #services {
+    > section {
+      .ServiceBox2 {
+        padding: 10vh 2vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  nav {
+    padding: 10px 1vmax;
+    > div {
+      gap: 0.7vw;
+    }
+  }
+
+  #Home {
+    > section {
+      &:first-of-type {
+        padding-right: 0px;
+        margin-right: 0px;
+      }
+
+      &:last-of-type {
+        &::after {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  #contact {
+    > aside {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  #services {
+    > section {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #Home {
+    height: 180vh;
+    > section {
+      &:first-of-type {
+        border-top: 0;
+        position: absolute;
+        top: 68%;
+        > h1 {
+        }
+        > div {
+          gap: 1vw;
+          > a {
+            padding: $p_button;
+          }
+        }
+      }
+
+      &:last-of-type {
+        &::after {
+          top: 5vh;
+          display: block;
+          height: 50vh;
+          width: 50vh
+        }
+
+        > img {
+          top: -10vh;
+          height: 70vh;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #testimonial {
+    > section {
+      flex-direction: column;
+
+      .testimonialCard {
+        width: 80vw;
+        height: auto;
+        margin: auto;
+      }
+    }
+  }
+
+  #contact{
+    display: flex;
+    margin: auto;
+    >section{
+        margin: auto;
+        width: 90%;
+        left: 1%;
+    }
+    >aside{
+        display: none;
+    }
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #Home {
+    height: 200vh;
+    > section {
+      &:first-of-type {
+        > aside {
+          flex-direction: column;
+        }
+
+        > article {
+          padding: 2vh 4vw;
+        }
+
+        > div {
+          gap: 1vw;
+          > a {
+            padding: $p_button;
+          }
+        }
+      }
+    }
+  }
+
+  #timeline {
+    .TimeLineBox {
+      &::after {
+        left: 3%;
+      }
+    }
+    .TimeLineItem {
+      width: 80%;
+      left: 8%;
+
+      &:nth-child(even) {
+        text-align: left;
+      }
+      &:nth-child(odd) {
+        text-align: left;
+      }
+    }
+  }
+}

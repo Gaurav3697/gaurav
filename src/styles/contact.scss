@@ -1,0 +1,57 @@
+#contact{
+    margin: 4vh 2vh;
+    width: calc( 100% - 2vh );
+    min-height:90vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    text-transform: uppercase;
+    border-bottom: 2px solid gray;
+
+
+    >section{
+        padding:14vh 8vh;
+        width: 100%;
+        position: relative;
+        left:5%;
+        margin: auto;
+        background-color: $primary_light;
+        border-radius: 10vh;
+
+       >form{
+           display: flex;
+           flex-direction: column;
+           gap: 2vh;
+
+        >h2{
+            text-transform: uppercase;
+            margin: auto;
+            border-bottom:2px solid black;
+        }
+
+        >input,button{
+            padding: 2vh;
+            border-radius: 2vh;
+        }
+
+        >button{
+            background-color: $primary;
+            cursor: pointer;
+            transition: all 0.7s;
+
+            &:hover{
+                background-color: $primary_dark;
+                color: white;
+                scale: 1.1;
+            }
+        }
+       }
+    }
+
+    >aside{
+        img{
+            width: 80%;
+            object-fit: contain;
+        }
+    }
+
+}

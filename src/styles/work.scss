@@ -1,0 +1,83 @@
+#Work {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  
+  > h1 {
+    width: fit-content;
+    border-bottom: 1px solid black;
+    margin: auto;
+  }
+
+  > section {
+    width: 100%;
+    height: 50%;
+    margin: 1rem;
+    padding: 1rem 1rem;
+
+    > article {
+        margin: auto;
+        padding: 1rem 1rem;
+
+      .carousel {
+        margin: auto;
+        padding: 2vh 4rem;
+        background-color: $primary_dark;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .workItem{
+            height: auto;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            border-radius: 20px;
+            width: 80%;
+
+
+            >img{
+                width: 30%;
+                margin: 1rem 3rem;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+
+            >aside{
+                padding: 1rem 1rem;
+
+                >h3{
+                    padding: 1rem 0rem;
+                    font:900 1.5rem $text1;
+                }
+                >p{
+                    padding: 1rem 1rem;
+                    font:500 1rem cursive;
+                    letter-spacing: 2px;
+                    word-spacing: 4px;
+                    margin-bottom:4px ;
+                    height: fit-content;
+                }
+                >a{
+                    text-decoration: none;
+                    color: black;
+                    background-color: white;
+                    transition: all 0.7s;
+                    padding:$p_button;
+                    border: 2px solid black;
+
+                    &:hover{
+                        color: white;
+                        background-color: black;
+                        scale: 1.2;
+                    }
+                }
+            }
+        }
+      }
+    }
+  }
+}

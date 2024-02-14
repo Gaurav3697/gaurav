@@ -1,0 +1,28 @@
+@import "static";
+@import "header";
+@import "home";
+@import "animation";
+@import "work";
+@import "experience";
+@import "services";
+@import "testimonial";
+@import "contact";
+@import "footer";
+@import "mediaquery";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: white;
+    overflow-x: hidden;
+}

@@ -1,0 +1,82 @@
+#timeline {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  > h1 {
+    margin: auto;
+    padding: 2px 0px;
+    border-bottom: 1px solid black;
+  }
+
+  .TimeLineBox {
+    margin: 1rem 2rem;
+    width: 100%;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 6px;
+      height: 100%;
+      background-color: $secondary_dark;
+      position: absolute;
+      left: 50%;
+      top: 0%;
+      bottom: 0%;
+      border-radius: 4px;
+    }
+  }
+}
+.TimeLineItem {
+  position: relative;
+  width: 41.5%;
+  height: auto;
+  padding: 5% 2%;
+  border: 2px solid $secondary;
+  background-color: #81b6ef;
+  font: 400 1rem cursive;
+  border-radius: 20px;
+  margin: 5vh 0vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  // &:nth-child(odd){
+  //   &::after{
+  //       animation: updown1 0.3s infinite linear alternate;
+  //   }
+  // }
+
+  &:nth-child(even){
+    text-align: left;
+
+    // &::after{
+    //     animation: updown2 0.5s infinite linear alternate;
+    // }
+
+  }
+
+  // &::after{
+  //   content: "";
+  //   position: absolute;
+  //   width: 25px;
+  //   height: 25px;
+  //   top: 50px;
+  //   right: -25%;
+  //   border: 5px solid black;
+  //   border-radius: 50%;
+  //   background-color: $primary;
+  //   z-index: 1;
+  // }
+}
+
+.even{
+    left:55%;
+
+    // &::after{
+    //     left: -15%
+    // }
+}
+
+

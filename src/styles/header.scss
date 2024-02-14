@@ -1,0 +1,54 @@
+@import "static";
+
+nav {
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  padding: $p_sm;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 1px;
+  font-family: $text2;
+  position: sticky;
+  top: 0%;
+  z-index: 60;
+  overflow-y: hidden;
+
+  > h2 {
+    font-family: $text2;
+    color: $info_dark;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+
+    > a {
+      border-radius: 5px;
+      font-family: $text2;
+      color: black;
+      padding: 1vw;
+      letter-spacing: 2px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  > a > button {
+    background-color: white;
+    color: black;
+    padding: 2vh 3vw;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color:black;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+#Home {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+
+  > section {
+    width: 100%;
+
+    &:first-of-type {
+      // background-color: rgb(206, 187, 187);
+      border-top: 2px solid black;
+      padding: 5% 5%;
+
+      > h1 {
+        font: 400 5rem $text2;
+        word-spacing: 4vw;
+        text-transform: uppercase;
+      }
+
+      .typewriterpara {
+        margin: 2vw 2vh;
+        font: 300 1.5rem "Courier New", Courier, monospace;
+        height: 6vh;
+      }
+
+      > div {
+        display: flex;
+        margin: 2vh 2vw;
+        gap: 2vw;
+
+        > a {
+          color: black;
+          padding: $p_button;
+          transition: all 0.5s;
+
+          &:first-of-type {
+            border: 1px solid $primary;
+            background-color: $primary;
+            font: 400 1rem $text3;
+            text-decoration: none;
+
+            &:hover {
+              background-color: $success_dark;
+              color: azure;
+            }
+          }
+
+          &:last-of-type {
+            &:hover {
+              color: $secondary;
+            }
+          }
+        }
+      }
+
+      > aside {
+        font: 300 1.7rem fantasy;
+        display: flex;
+        > article {
+          width: fit-content;
+          font: 300 1.7rem fantasy;
+          margin: 6vh 1vh;
+          padding: $p_button;
+          background-color: $primary_light;
+          border-radius: 50px;
+        }
+      }
+
+      > article {
+        width: fit-content;
+        font: 300 1.7rem fantasy;
+        margin: 0vh 1vh;
+        padding: $p_button;
+        background-color: $primary_light;
+        border-radius: 50px;
+      }
+    }
+
+    &:last-of-type {
+      height: 35rem;
+      overflow-y:hidden ;
+      width: 100%;
+      // background-color: blue;
+      border-top: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      &::after {
+        top:15%;
+        display: flex;
+        content: "";
+        position: absolute;
+        margin: auto;
+        width: 70%;
+        height: 90%;
+        background-color: $primary;
+        border-radius: 50%;
+        z-index: -1;
+      }
+
+      > img {
+        position: absolute;
+        margin: auto;
+        top:0%;
+        height: 100%;
+        object-fit: contain;
+      
+      }
+
+      svg {
+        position: absolute;
+        left: 50%;
+        bottom: 3%;
+        font-size: 4rem;
+        transform: translatex(-50%);
+        animation: animate_svg 1s infinite linear alternate;
+        opacity: 0.5;
+      }
+    }
+  }
+}
