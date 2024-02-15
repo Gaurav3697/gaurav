@@ -1,5 +1,5 @@
 import React from "react";
-import { animate, motion, useAnimation } from "framer-motion";
+import { animate, motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { BsArrowUpRight, BsChevronBarDown } from "react-icons/bs";
 import me from "../assets/logo.png";
@@ -40,7 +40,7 @@ const Home = () => {
         <motion.h1 {...animation.h1}>Hi! I Am GAURAV</motion.h1>
         <Typewriter
           options={{
-            strings: ["A Developer", "A programmer", "A enterprenuer"],
+            strings: ["A Developer", "A Programmer", "A Student" , "A Learner"],
             autoStart: true,
             loop: true,
             wrapperClassName: "typewriterpara",

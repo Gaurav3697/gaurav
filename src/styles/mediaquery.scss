@@ -48,6 +48,18 @@
 }
 
 @media screen and (max-width: 700px) {
+  nav {
+    .NavBarComputer {
+      display: none;
+      .NavBarComputerLinks{
+        display: none;
+      }
+    }
+    >a{
+      display: block;
+    }
+  }
+
   #Home {
     height: 180vh;
     > section {
@@ -70,7 +82,7 @@
           top: 5vh;
           display: block;
           height: 50vh;
-          width: 50vh
+          width: 50vh;
         }
 
         > img {
@@ -95,20 +107,20 @@
     }
   }
 
-  #contact{
+  #contact {
     display: flex;
     margin: auto;
-    >section{
-        margin: auto;
-        width: 90%;
-        left: 1%;
+    > section {
+      margin: auto;
+      width: 90%;
+      left: 1%;
     }
-    >aside{
-        display: none;
+    > aside {
+      display: none;
     }
   }
 
-  footer{
+  footer {
     display: flex;
     flex-direction: column;
     gap: 3rem;

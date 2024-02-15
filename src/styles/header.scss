@@ -2,11 +2,11 @@
 
 nav {
   background-color: white;
-  width: 100%;
-  height: 70px;
+  width: 100%; 
+  height: auto;   //70px
   padding: $p_sm;
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: space-between;
   letter-spacing: 1px;
   font-family: $text2;
@@ -20,35 +20,95 @@ nav {
     color: $info_dark;
   }
 
-  > div {
+  .NavBarComputer {
     display: flex;
     align-items: center;
     gap: 2vw;
+    
+    .NavBarComputerLinks{
+      display: flex;
+      align-items: center;
 
-    > a {
-      border-radius: 5px;
-      font-family: $text2;
+      > a {
+        border-radius: 5px;
+        font-family: $text2;
+        color: black;
+        padding: 1vw;
+        letter-spacing: 2px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+    > a > button {
+      background-color: white;
       color: black;
-      padding: 1vw;
-      letter-spacing: 2px;
-      font-weight: 500;
+      padding: 2vh 3vw;
       cursor: pointer;
       transition: all 0.5s;
+      
       &:hover {
-        color: $primary;
+        background-color:black;
+        color: white;
       }
     }
   }
-  > a > button {
-    background-color: white;
-    color: black;
-    padding: 2vh 3vw;
-    cursor: pointer;
-    transition: all 0.5s;
+  >a{
+    display: none;
+    margin-right: 11vw;
+    height: 1.8rem;
+    width: 1.4rem;
+    overflow-y: hidden;
+  }
 
-    &:hover {
-      background-color:black;
-      color: white;
+
+  .HamBurger {
+    border-top: 2px solid $secondary_dark;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    height: auto;
+    position: relative;
+    top: 6vh;
+    margin-bottom: 3rem;
+
+    .HamBurgerComputerLinks{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2vh;
+
+      > a {
+        border-bottom: 1px solid $secondary_dark;
+        font-family: $text2;
+        color: black;
+        padding: 1vw;
+        letter-spacing: 2px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+    > a > button {
+      background-color: white;
+      color: black;
+      padding: 2vh 3vw;
+      cursor: pointer;
+      transition: all 0.5s;
+      
+      &:hover {
+        background-color:black;
+        color: white;
+      }
     }
   }
+
 }

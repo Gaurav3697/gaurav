@@ -2,12 +2,12 @@ import React from 'react';
 import data from "../assets/data.json";
 
 const Experience = () => {
-  const TimeLineItem =({Heading,text,Date,index})=> (
+  const TimeLineItem =({heading,text,Date,index})=> (
     <div className={ ` TimeLineItem ${ index%2===0 ?"even":"odd"}`}>
-      <h2>{Heading}</h2>
+      <h2>{heading}</h2>
       <p>{text}</p>
       <span>{Date}</span>
-    </div>
+    </div> 
   );
 
   return (
@@ -16,7 +16,8 @@ const Experience = () => {
       <div className='TimeLineBox'>
         {data.projects.map((item,index)=>(
           <TimeLineItem
-            Heading={item.title}
+            key={item.key}
+            heading={item.title}
             text={item.description}
             Date={item.date}
             index={index}
