@@ -1,6 +1,6 @@
 @media screen and (max-width: 1000px) {
   #services {
-    > section {
+    >section {
       .ServiceBox2 {
         padding: 10vh 2vw;
       }
@@ -11,13 +11,14 @@
 @media screen and (max-width: 850px) {
   nav {
     padding: 10px 1vmax;
-    > div {
+
+    >div {
       gap: 0.7vw;
     }
   }
 
   #Home {
-    > section {
+    >section {
       &:first-of-type {
         padding-right: 0px;
         margin-right: 0px;
@@ -32,7 +33,7 @@
   }
 
   #contact {
-    > aside {
+    >aside {
       img {
         width: 100%;
       }
@@ -40,7 +41,7 @@
   }
 
   #services {
-    > section {
+    >section {
       display: flex;
       flex-direction: column;
     }
@@ -51,27 +52,29 @@
   nav {
     .NavBarComputer {
       display: none;
-      .NavBarComputerLinks{
+
+      .NavBarComputerLinks {
         display: none;
       }
     }
-    >a{
+
+    >a {
       display: block;
     }
   }
 
   #Home {
     height: 180vh;
-    > section {
+
+    >section {
       &:first-of-type {
         border-top: 0;
         position: absolute;
         top: 68%;
-        > h1 {
-        }
-        > div {
+        >div {
           gap: 1vw;
-          > a {
+
+          >a {
             padding: $p_button;
           }
         }
@@ -85,7 +88,7 @@
           width: 50vh;
         }
 
-        > img {
+        >img {
           top: -10vh;
           height: 70vh;
         }
@@ -96,7 +99,7 @@
 
 @media screen and (max-width: 600px) {
   #testimonial {
-    > section {
+    >section {
       flex-direction: column;
 
       .testimonialCard {
@@ -110,12 +113,14 @@
   #contact {
     display: flex;
     margin: auto;
-    > section {
+
+    >section {
       margin: auto;
       width: 90%;
       left: 1%;
     }
-    > aside {
+
+    >aside {
       display: none;
     }
   }
@@ -130,19 +135,21 @@
 @media screen and (max-width: 400px) {
   #Home {
     height: 200vh;
-    > section {
+
+    >section {
       &:first-of-type {
-        > aside {
+        >aside {
           flex-direction: column;
         }
 
-        > article {
+        >article {
           padding: 2vh 4vw;
         }
 
-        > div {
+        >div {
           gap: 1vw;
-          > a {
+
+          >a {
             padding: $p_button;
           }
         }
@@ -155,16 +162,92 @@
       &::after {
         left: 3%;
       }
+
     }
+
     .TimeLineItem {
       width: 80%;
       left: 8%;
 
-      &:nth-child(even) {
-        text-align: left;
+      >a {
+        width: 35vw;
       }
+
+      &:nth-child(even) {
+        text-align: center;
+      }
+
       &:nth-child(odd) {
-        text-align: left;
+        text-align: center;
+      }
+    }
+  }
+
+  #services {
+    >section {
+      >div {
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        width: 100%;
+
+        .ServiceBox1 {
+          width: 90%;
+
+          >p {
+            font: 300 1.5rem $text5;
+            margin: auto;
+          }
+
+          >span {
+            font: 300 1.5rem $text5;
+            margin: auto;
+          }
+        }
+
+        .ServiceBox2 {
+          width: 90%;
+          text-align: center;
+
+          &:hover {
+            box-shadow: 0 0 5px 15px white;
+          }
+
+          >svg {
+            margin: auto;
+            font: 400 2rem $text5;
+          }
+
+          >span {
+            font: 300 1.5rem $text5;
+            margin: auto;
+          }
+        }
+      }
+
+      .ServiceBox3 {
+        padding: 10vh 10vw;
+        border-radius: 40px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        transition: all 0.5s;
+        cursor: pointer;
+
+        &:hover {
+          box-shadow: 0 0 5px 15px white;
+        }
+
+        >svg {
+          margin: auto;
+          font-size: 5rem;
+        }
+
+        >span {
+          font: 400 3rem $text1;
+          margin: auto;
+        }
       }
     }
   }

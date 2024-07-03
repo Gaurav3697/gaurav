@@ -1,72 +1,116 @@
-#services{
+#services {
     height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 5rem 0;
 
-    >h1{
+    >h1 {
         margin: auto;
-        border-bottom: 2px solid black;
+        padding: 2px 0px;
+        border-bottom: 1px solid black;
+        font: 300 2rem $text1;
     }
-    >section{
-        margin:7vh 3vw;
+
+    >section {
+        margin: 7vh 3vw;
         margin-right: 2vw;
         padding: 5vh 5vw;
         display: flex;
-        height:fit-content;
+        height: fit-content;
         width: 90vw;
-        gap:5vw;
+        gap: 5vw;
         background-color: $primary_dark;
         border-radius: 10px;
         transition: all 0.5s;
         cursor: pointer;
-        
-        .ServiceBox1{
-            height: auto;
-            padding: 10vh 1vw;
-            border-radius: 40px;
-            background-color: white;
+        flex-direction: column;
+
+        >div {
             display: flex;
-            flex-direction: column;
-            transition: all 0.5s;
+            flex-direction: row;
+            gap: 3vw;
+            width: 100%;
+
+            .ServiceBox1 {
+                margin: 1rem;
+                height: auto;
+                padding: 10vh 2vw;
+                border-radius: 40px;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                transition: all 0.5s;
+                width: 60%;
 
 
-            &:hover{
-                box-shadow:0 0 5px 15px white;
+                &:hover {
+                    box-shadow: 0 0 5px 15px white;
+                }
+
+                >p {
+                    font: 200 3rem cursive;
+                    margin: auto;
+                }
+
+                >span {
+                    font: 400 3rem $text5;
+                    margin: auto;
+                }
             }
-            >p{
-                font: 200 3rem cursive;
-                margin: auto;
-            }
-            >span{
-                font: 400 3rem $text1;
-                margin: auto;
+
+            .ServiceBox2 {
+                margin: 1rem;
+                padding: 10vh 10vw;
+                border-radius: 40px;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                transition: all 0.5s;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: 0 0 5px 15px white;
+                }
+
+                >svg {
+                    margin: auto;
+
+                    font-size: 5rem;
+                }
+
+                >span {
+                    font: 400 3rem $text5;
+                    margin: auto;
+                }
             }
         }
-        .ServiceBox2{
+
+        .ServiceBox3 {
             padding: 10vh 10vw;
             border-radius: 40px;
             background-color: white;
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             height: auto;
             transition: all 0.5s;
             cursor: pointer;
+            text-align: center;
 
-            &:hover{
-                box-shadow:0 0 5px 15px white;
+            &:hover {
+                box-shadow: 0 0 5px 15px white;
             }
 
-            >svg{
+            >svg {
                 margin: auto;
-                
-                font-size: 5rem;
+                font-size: 1rem;
             }
-            >span{
+
+            >span {
                 font: 400 3rem $text1;
                 margin: auto;
             }
         }
     }
 }
-

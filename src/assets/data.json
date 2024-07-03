@@ -1,46 +1,35 @@
 {
   "projects": [
     {
-      "key":1,
-      "date": "07/01/2024",
-      "title": "TECHY STAR",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
-      "url": "https://reactone-nine.vercel.app",
+      "key": 1,
+      "date": "9/6/2023",
+      "title": "TODO APP",
+      "description": "After building so many small projects like spotify clones, facebook login page clone , todo app that stores task list in localStorage, I build my full stack todo app that learnt me a lot about authentication,CRUD operation in database and many more",
+      "url": "https://todo-frontend-with-react.vercel.app/",
       "imgSrc": "https://cdn.pixabay.com/photo/2018/06/07/16/49/virtual-3460451_960_720.jpg"
     },
-
     {
-      "key":2,
-      "date": "11/01/2024",
-      "title": "VIDEO HUB",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
-      "url": "https://react-video-app-eight.vercel.app",
+      "key": 2,
+      "date": "10/02/2024",
+      "title": "PORTFOLIO WEBSITE",
+      "description": "After learning basics of frontend and backend I learnt react and made a portfolio website just for Practice but now I am still using it to show my skills and acheivements updating it time to time ",
+      "url": "https://react-portfolio-website-fully-responsive.vercel.app/",
       "imgSrc": "https://cdn.pixabay.com/photo/2016/11/21/12/51/mobile-phone-1845233__340.jpg"
     },
     {
-      "key":3,
+      "key": 3,
       "date": "15/01/2024",
-      "title": "XCrypto",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
-      "url": "https://react-crypto-app-pi.vercel.app",
-      "imgSrc": "https://cdn.pixabay.com/photo/2017/12/12/12/44/bitcoin-3014614_960_720.jpg"
+      "title": "Ecommerce website",
+      "description": "Due to the final examination, I has to take break from my programming journey . But i choose to built a ecommerce website to come back for all the concepts i had ever learnt. I made a electronics ecommerce website named GElectronics which includes electronics products",
+      "url": "https://my-ecommerce-frontend-delta.vercel.app/",
+      "imgSrc": "https://cdn.pixabay.com/photo/2016/11/21/12/51/mobile-phone-1845233__340.jpg"
     },
-
     {
-      "key":4,
-      "date": "17/01/2024",
-      "title": "REACT CART",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
-      "url": "https://react-cart-eosin.vercel.app",
+      "key": 4,
+      "title": "RENTO",
+      "description": "This is a problem solving Product that will establish connection between customer who wants to rent his goods like camera,car,bike or anything and customer who want to take these item on rent for a particular time.",
+      "url": null,
       "imgSrc": "https://cdn.pixabay.com/photo/2019/12/14/08/36/shopping-4694470_960_720.jpg"
-    },
-    {
-      "key":5,
-      "date": "20/01/2022",
-      "title": "PORTFOLIO",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
-      "url": "/",
-      "imgSrc": "https://cdn.pixabay.com/photo/2020/03/19/21/25/cactus-4948833_960_720.jpg"
     }
   ]
 }

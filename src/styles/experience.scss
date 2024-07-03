@@ -3,11 +3,13 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin: 5rem 0;
 
-  > h1 {
+  >h1 {
     margin: auto;
     padding: 2px 0px;
     border-bottom: 1px solid black;
+    font: 300 2rem $text1;
   }
 
   .TimeLineBox {
@@ -15,6 +17,7 @@
     width: 100%;
     position: relative;
 
+    // it is stick
     &::after {
       content: "";
       width: 6px;
@@ -26,8 +29,10 @@
       bottom: 0%;
       border-radius: 4px;
     }
+
   }
 }
+
 .TimeLineItem {
   position: relative;
   width: 41.5%;
@@ -35,48 +40,68 @@
   padding: 5% 2%;
   border: 2px solid $secondary;
   background-color: #81b6ef;
-  font: 400 1rem cursive;
   border-radius: 20px;
   margin: 5vh 0vh;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 3vh;
+  text-align: center;
 
-  // &:nth-child(odd){
-  //   &::after{
-  //       animation: updown1 0.3s infinite linear alternate;
-  //   }
-  // }
-
-  &:nth-child(even){
-    text-align: left;
-
-    // &::after{
-    //     animation: updown2 0.5s infinite linear alternate;
-    // }
-
+  >h2 {
+    font: 400 200 cursive;
   }
 
-  // &::after{
+  >p {
+    font: 400 1rem $text5;
+  }
+
+  >a {
+    font: 400 1rem $text5;
+    text-decoration: none;
+    color: $primary;
+    width: 10vw;
+    margin: auto;
+    transition: all 200ms;
+
+    &:hover {
+      font: $text5;
+      color: $primary_dark;
+    }
+  }
+
+  >span{
+    font: 300 1.5rem $text4;
+  }
+
+  // &::after {
   //   content: "";
   //   position: absolute;
   //   width: 25px;
   //   height: 25px;
   //   top: 50px;
-  //   right: -25%;
+  //   right: 0%;
   //   border: 5px solid black;
   //   border-radius: 50%;
   //   background-color: $primary;
-  //   z-index: 1;
+  // }
+
+  // &:nth-child(odd) {
+  //   &::after {
+  //     animation: updown1 0.3s infinite linear alternate;
+  //   }
+  // }
+
+  // &:nth-child(even) {
+  //   &::after {
+  //     animation: updown2 0.5s infinite linear alternate;
+  //   }
+
+}
+
+.even {
+  left: 55%;
+
+  // &::after{
+  //     left: -15%
   // }
 }
-
-.even{
-    left:55%;
-
-    // &::after{
-    //     left: -15%
-    // }
-}
-
-

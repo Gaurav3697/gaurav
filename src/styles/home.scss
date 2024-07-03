@@ -13,15 +13,14 @@
       padding: 5% 5%;
 
       > h1 {
-        font: 400 5rem $text2;
-        word-spacing: 4vw;
-        text-transform: uppercase;
+        font: 400 3.5rem $text5;
       }
 
       .typewriterpara {
         margin: 2vw 2vh;
-        font: 300 1.5rem "Courier New", Courier, monospace;
+        font: 300 2rem $text4;
         height: 6vh;
+        overflow-y: hidden;
       }
 
       > div {
@@ -37,16 +36,18 @@
           &:first-of-type {
             border: 1px solid $primary;
             background-color: $primary;
-            font: 400 1rem $text3;
+            font: 400 1rem $text5;
             text-decoration: none;
 
             &:hover {
-              background-color: $success_dark;
+              font: $text5;
+              background-color: $primary_dark;
               color: azure;
             }
           }
 
           &:last-of-type {
+            font: 400 1rem $text5;
             &:hover {
               color: $secondary;
             }
@@ -55,11 +56,11 @@
       }
 
       > aside {
-        font: 300 1.7rem fantasy;
+        font: 300 1.7rem $text5;
         display: flex;
         > article {
           width: fit-content;
-          font: 300 1.7rem fantasy;
+          font: 300 1.7rem $text5;
           margin: 6vh 1vh;
           padding: $p_button;
           background-color: $primary_light;
@@ -69,7 +70,7 @@
 
       > article {
         width: fit-content;
-        font: 300 1.7rem fantasy;
+        font: 300 1.7rem $text5;
         margin: 0vh 1vh;
         padding: $p_button;
         background-color: $primary_light;

@@ -6,18 +6,18 @@ import me from "../assets/logo.png";
 import { useRef } from "react";
 
 const Home = () => {
-  const clientCount = useRef(null);
+  // const clientCount = useRef(null);
   const projectCount = useRef(null);
 
-  const animationClientsCount = () => {
-    animate(0, 100, {
-      duration: 1,
-      onUpdate: (v) => (clientCount.current.textContent = v.toFixed()),
-    });
-  };
+  // const animationClientsCount = () => {
+  //   animate(0, 100, {
+  //     duration: 1,
+  //     onUpdate: (v) => (clientCount.current.textContent = v.toFixed()),
+  //   });
+  // };
 
   const animationProjectCount = () => {
-    animate(0, 500, {
+    animate(0, 5, {
       duration: 1,
       onUpdate: (v) => (projectCount.current.textContent = v.toFixed()),
     });
@@ -37,10 +37,10 @@ const Home = () => {
   return (
     <div id="Home">
       <section>
-        <motion.h1 {...animation.h1}>Hi! I Am GAURAV</motion.h1>
+        <motion.h1 {...animation.h1}>Hello! I Am Gaurav</motion.h1>
         <Typewriter
           options={{
-            strings: ["A Developer", "A Programmer", "A Student" , "A Learner"],
+            strings: ["A Developer", "A Programmer", "A Freelancer" , "A Life Long Learner"],
             autoStart: true,
             loop: true,
             wrapperClassName: "typewriterpara",
@@ -57,7 +57,7 @@ const Home = () => {
         </div>
 
         <aside>
-          <article>
+          {/* <article>
             <p>
               +
               <motion.span
@@ -66,7 +66,7 @@ const Home = () => {
               ></motion.span>
             </p>
             <span>Clients</span>
-          </article>
+          </article> */}
           <article>
             <p>
               +

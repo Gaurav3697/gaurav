@@ -1,15 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
 $text1:'Courier New', Courier, monospace;
 $text2:'Times New Roman', Times, serif;
 $text3:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$text4:"Ga Maamli", sans-serif;
+$text5:"Playwrite GB S", cursive;
 
 $primary: #007bff;
+$primary_dark: #034993;
 $primary_light:#81b6ef;
 $secondary: #6c757d;
 $success: #28a745;
 $info: #17a2b8;
 $warning: #ffc107;
 $danger: #dc3545;
-$primary_dark: #034993;
+
 $secondary_dark: #333435;
 $success_dark: #075a1a;
 $info_dark: #044650;

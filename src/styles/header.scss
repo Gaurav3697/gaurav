@@ -9,15 +9,14 @@ nav {
   // align-items: center;
   justify-content: space-between;
   letter-spacing: 1px;
-  font-family: $text2;
   position: sticky;
   top: 0%;
   z-index: 60;
   overflow-y: hidden;
 
   > h2 {
-    font-family: $text2;
-    color: $info_dark;
+    font-family: $text4;
+    font-size: 40px;
   }
 
   .NavBarComputer {
@@ -31,7 +30,7 @@ nav {
 
       > a {
         border-radius: 5px;
-        font-family: $text2;
+        font-family: $text5;
         color: black;
         padding: 1vw;
         letter-spacing: 2px;
@@ -49,6 +48,7 @@ nav {
       padding: 2vh 3vw;
       cursor: pointer;
       transition: all 0.5s;
+      border-radius: 20px;
       
       &:hover {
         background-color:black;
