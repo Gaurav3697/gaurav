@@ -8,7 +8,6 @@ const Footer = () => {
     <footer>
       <div>
         <h2>Creator</h2>
-        <img src={me} alt="" />
         <span>gm4063420@gmail.com</span>
         <p>Always learn and be happy</p>
       </div>

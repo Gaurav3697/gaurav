@@ -3,6 +3,7 @@ import data from "../assets/data.json";
 import { BsArrowUpRight } from 'react-icons/bs';
 
 const Experience = () => {
+
   const TimeLineItem =({heading,text,Date,index,url})=> (
     <div className={ ` TimeLineItem ${ index%2===0 ?"even":"odd"}`}>
       <h2>{heading}</h2>

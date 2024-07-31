@@ -13,13 +13,13 @@
     }
 
     >section {
-        margin: 7vh 3vw;
+        margin: 3vh 3vw;
         margin-right: 2vw;
-        padding: 5vh 5vw;
+        padding: 2vh 3vw;
         display: flex;
         height: fit-content;
         width: 90vw;
-        gap: 5vw;
+        gap: 3vw;
         background-color: $primary_dark;
         border-radius: 10px;
         transition: all 0.5s;
@@ -76,7 +76,6 @@
 
                 >svg {
                     margin: auto;
-
                     font-size: 5rem;
                 }
 
@@ -104,7 +103,7 @@
 
             >svg {
                 margin: auto;
-                font-size: 1rem;
+                font-size: 0.5rem;
             }
 
             >span {

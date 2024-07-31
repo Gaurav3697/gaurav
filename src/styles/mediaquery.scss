@@ -8,9 +8,13 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   nav {
     padding: 10px 1vmax;
+
+    >h2{
+    width: 100%;
+    }
 
     >div {
       gap: 0.7vw;
@@ -59,12 +63,13 @@
     }
 
     >a {
-      display: block;
+      display: flex;
+      align-items: center;
     }
   }
 
   #Home {
-    height: 180vh;
+    height: auto;
 
     >section {
       &:first-of-type {
@@ -132,9 +137,9 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   #Home {
-    height: 200vh;
+    min-height: 150vh;
 
     >section {
       &:first-of-type {
@@ -161,13 +166,14 @@
     .TimeLineBox {
       &::after {
         left: 3%;
+        display: none;
       }
 
     }
 
     .TimeLineItem {
       width: 80%;
-      left: 8%;
+      position: static;
 
       >a {
         width: 35vw;
@@ -185,6 +191,8 @@
 
   #services {
     >section {
+      padding: 2rem 1rem;
+
       >div {
         display: flex;
         flex-direction: column;
@@ -193,6 +201,7 @@
 
         .ServiceBox1 {
           width: 90%;
+          padding: 2rem 1rem;
 
           >p {
             font: 300 1.5rem $text5;
@@ -208,6 +217,7 @@
         .ServiceBox2 {
           width: 90%;
           text-align: center;
+          padding: 2rem 1rem;
 
           &:hover {
             box-shadow: 0 0 5px 15px white;
@@ -226,26 +236,25 @@
       }
 
       .ServiceBox3 {
-        padding: 10vh 10vw;
-        border-radius: 40px;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        transition: all 0.5s;
-        cursor: pointer;
+        padding: 2rem 1rem;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        display: block;
 
         &:hover {
           box-shadow: 0 0 5px 15px white;
         }
 
         >svg {
-          margin: auto;
-          font-size: 5rem;
+          font: 400 2rem $text5;
+          height: 10vh;
+          width: 10vh;
+          margin: 1rem 1rem;
         }
 
         >span {
-          font: 400 3rem $text1;
+          font: 300 1.5rem $text5;
           margin: auto;
         }
       }

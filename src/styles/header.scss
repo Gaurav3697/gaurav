@@ -66,15 +66,14 @@ nav {
 
 
   .HamBurger {
-    border-top: 2px solid $secondary_dark;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2vw;
     height: auto;
     position: relative;
-    top: 6vh;
+    top:6vh;
     margin-bottom: 3rem;
 
     .HamBurgerComputerLinks{
